@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #1976D2;
+    --secondary-color: #64B5F6;
+    --accent-color: #2196F3;
+    --background-color: #F5F5F5;
+    --text-color: #212121;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    padding: 5px;
+    border-radius: 15px;
+    transition: width 0.6s ease;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.table {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.badge {
+    padding: 8px 12px;
+    font-weight: 500;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.table td {
+    vertical-align: middle;
+}

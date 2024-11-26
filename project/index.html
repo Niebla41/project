@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Académico</title>
+    <link href="/css/custom-bootstrap.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.svg" alt="Portfolio Logo" width="40" height="40">
+                Portfolio Académico
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#academico">Académico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Profile Section -->
+        <section id="perfil" class="row mb-5">
+            <div class="col-md-4">
+                <div class="card profile-card">
+                    <div class="card-body text-center">
+                        <img src="/images/profile.jpg" alt="Profile" class="rounded-circle mb-3" width="150">
+                        <h2 class="card-title">José Guadalupe González Zavala</h2>
+                        <p class="card-text">Estudiante de Ingeniería en Sistemas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Resumen Académico</h3>
+                        <div id="overallStats" class="row text-center mb-4">
+                            <div class="col">
+                                <h4 id="overallAverage" class="display-4">89.5</h4>
+                                <p class="text-muted">Promedio General</p>
+                            </div>
+                            <div class="col">
+                                <h4 id="overallLevel" class="display-4 text-primary">Hábil</h4>
+                                <p class="text-muted">Nivel de Competencia</p>
+                            </div>
+                        </div>
+                        <canvas id="competencyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Records -->
+        <section id="academico" class="card mb-5">
+            <div class="card-body">
+                <h3 class="card-title mb-4">Kardex Académico</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Materia</th>
+                                <th>Categoría</th>
+                                <th>Calificación</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody id="courseTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="habilidades" class="card mb-5">
+            <div class="card-body">
+                <h3 class="card-title mb-4">Habilidades Técnicas</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h4 class="skill-category"><i class="bi bi-code-slash"></i> Programación</h4>
+                        <div class="skill-items">
+                            <span class="badge bg-primary m-1">JavaScript</span>
+                            <span class="badge bg-primary m-1">Python</span>
+                            <span class="badge bg-primary m-1">Java</span>
+                            <span class="badge bg-primary m-1">React</span>
+                            <span class="badge bg-primary m-1">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4 class="skill-category"><i class="bi bi-database"></i> Bases de Datos</h4>
+                        <div class="skill-items">
+                            <span class="badge bg-info m-1">MySQL</span>
+                            <span class="badge bg-info m-1">MongoDB</span>
+                            <span class="badge bg-info m-1">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4 class="skill-category"><i class="bi bi-diagram-3"></i> Redes</h4>
+                        <div class="skill-items">
+                            <span class="badge bg-success m-1">TCP/IP</span>
+                            <span class="badge bg-success m-1">Seguridad</span>
+                            <span class="badge bg-success m-1">Configuración de Redes</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h4 class="skill-category"><i class="bi bi-cpu"></i> Machine Learning</h4>
+                        <div class="skill-items">
+                            <span class="badge bg-warning m-1">TensorFlow</span>
+                            <span class="badge bg-warning m-1">Scikit-learn</span>
+                            <span class="badge bg-warning m-1">Análisis de Datos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="card">
+            <div class="card-body">
+                <h3 class="card-title mb-4">Contacto</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            <h5>Email</h5>
+                            <p><a href="mailto:joseguadalupegonzalezzavala2.com" class="text-decoration-none">joseguadalupegonzalezzavala2.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill text-primary"></i>
+                            <h5>Teléfono</h5>
+                            <p><a href="tel:+524661873456" class="text-decoration-none">+52 466 187 3456</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                            <h5>Ubicación</h5>
+                            <p>Salvatierra, Guanajuato</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
